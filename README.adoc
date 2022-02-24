@@ -1,0 +1,21 @@
+= UE Boom Reverse Engineering
+
+Taking an android app apk converted to a jar to learn about bluetooth command data format to send over bluetooth without the app.
+
+The goal was to reverse engineer the spp (rfcomm) socket message format to disable bluetooth low energy, since the new app doesn't have that option anymore. Testing to see if disabling BLE to improve battery life.
+
+== Reference
+
+=== SPP
+
+`com.logitech.ue.centurion.device.command.UEDeviceCommand.UECommand`::
+    List of commands to be able to send
+`com.logitech.ue.centurion.device.command.UEGenericDeviceCommand.buildCommandData`::
+    Method that builds the bytes to send
+`com.logitech.ue.centurion.device.UESPPDevice`::
+    Methods that execute those commands
+
+=== BLE Characteristics
+
+`com.logitech.ue.centurion.ble.UEBLECharacteristics`::
+    List of UUIDs for BLE characteristics
