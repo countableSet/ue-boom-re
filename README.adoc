@@ -19,3 +19,13 @@ The goal was to reverse engineer the spp (rfcomm) socket message format to disab
 
 `com.logitech.ue.centurion.ble.UEBLECharacteristics`::
     List of UUIDs for BLE characteristics
+
+== Commands
+
+Adjust Volume Up by One:: `04 01 BB 01 01`
+Announce Battery Level:: `02 01 6B`
+Set Sonfication (Conga):: `03 01 65 01`
+Set Sonfication (None):: `03 01 65 00`
+Emit Sound (Power On):: `04 01 6C 60 C0`
+Set BLE State Off:: `03 01 B9 00`
+Set BLE State On:: `03 01 B9 01`
