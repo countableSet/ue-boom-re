@@ -2,7 +2,7 @@
 
 Taking an android app apk converted to a jar to learn about bluetooth command data format to send over bluetooth without the app.
 
-The goal was to reverse engineer the spp (rfcomm) socket message format to disable bluetooth low energy, since the new app doesn't have that option anymore. Testing to see if disabling BLE to improve battery life.
+The goal was to reverse engineer the spp (rfcomm) socket message format to disable bluetooth low energy, since the new app doesn't have that option anymore. Testing to see if disabling BLE to improve battery life (link:https://blog.countableset.com/2022/02/22/ue-boom-reverse-engineering/[blog post]).
 
 == Reference
 
